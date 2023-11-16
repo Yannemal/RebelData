@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import SwiftData
 // other structs:
 
 struct ContentView: View {

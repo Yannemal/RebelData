@@ -1,17 +1,22 @@
 //
 //  RebelDataApp.swift
 //  RebelData
-//
-//  Created by yann guyt on 16/11/2023.
+//  tut by Rebeloper
+//  Student yannemal on 16NOV2023.
 //
 
 import SwiftUI
+import SwiftData
 
 @main
+
 struct RebelDataApp: App {
+    
     var body: some Scene {
+        
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Video.self)
     }
 }
