@@ -27,6 +27,7 @@ enum ModelSchemaV1: VersionedSchema {
             self.Date = .now
         }
     }
+    
     @Model
     class Keyword {
         @Attribute(.unique) var title: String
