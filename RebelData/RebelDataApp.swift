@@ -27,7 +27,7 @@ struct RebelDataApp: App {
     // someSCENE:
         
         WindowGroup {
-            ContentView()
+            VideosListView()
         }
         .modelContainer(container)
     }

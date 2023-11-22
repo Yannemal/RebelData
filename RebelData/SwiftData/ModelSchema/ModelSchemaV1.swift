@@ -20,11 +20,14 @@ enum ModelSchemaV1: VersionedSchema {
     @Model
     class Video {
         var title: String
-        var Date: Date
+        var date: Date
+        @Relationship(deleteRule: .cascade) var keywords: [Keyword]
+        // when the video is deleted all keywords associated with this video should be deleted also
         
         init(title: String = "") {
             self.title = title
-            self.Date = .now
+            self.date = .now
+            self.keywords = []
         }
     }
     
